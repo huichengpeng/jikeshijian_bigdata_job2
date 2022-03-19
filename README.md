@@ -1,4 +1,3 @@
-## 极客时间作业2
 
 ### 作业描述
 
@@ -14,6 +13,25 @@
 
 
 ### 实战
+
+部署hbase docker 环境
+
+```shell
+#拉取镜像
+docker pull harisekhon/hbase
+#启动容器
+docker run -d -p 2181:2181 -p 8080:8080 -p 8085:8085 -p 9090:9090 -p 9095:9095 -p 16000:16000 -p 16010:16010 -p 16201:16201 -p 16301:16301 -p 16030:16030 -p 16020:16020 --name jikeshijian_hbase harisekhon/hbase
+```
+
+配置系统hosts，追加
+
+127.0.0.1 容器ID    
+
+
+
+进入容器
+
+进入habase shell
 
 创建namespace
 
